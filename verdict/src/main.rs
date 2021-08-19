@@ -45,7 +45,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         )
         .get_matches();
 
-    let mut client = ConfigureProviderServiceClient::connect("http://[::1]:50051").await?;
+    let mut client = ConfigureProviderServiceClient::connect("http://[::1]:60000").await?;
 
     // set_policy
     if matches.is_present("set_policy") {
