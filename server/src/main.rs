@@ -83,7 +83,7 @@ impl ConfigureProviderService for configProviderService {
 
         let res = ExportPolicyResponse {
             status: "OK".as_bytes().to_vec(),
-            policycontent: "hhhhhhhhhhhhhh".to_string().into_bytes(),
+            policycontent: "what do you mean\n just a test\n don't be serious".to_string().into_bytes(),
         };
 
         Ok(Response::new(res))
