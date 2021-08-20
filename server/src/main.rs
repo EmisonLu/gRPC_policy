@@ -92,7 +92,7 @@ impl ConfigureProviderService for configProviderService {
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let addr = "[::1]:50051".parse()?;
+    let addr = "[::1]:60000".parse()?;
     let service = configProviderService::default();
 
     Server::builder()
